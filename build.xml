@@ -1,0 +1,26 @@
+<?xml version = "1.0"?>
+<project name= "pathak_x_pp1" default="info" basedir=".">
+	
+	<target name="info">
+
+		<echo>This ant script builds a simple Java project.</echo>
+
+	</target>
+	
+	<target name="run">
+		<echo>Generating the .java files</echo>
+		
+		<java classname="AntScript">	
+			
+		</java>
+
+	</target>
+
+	<target name="build">
+		<echo>Compiling the .java source files</echo>
+		<javac includeantruntime="false" srcdir="." destdir="." />
+	</target>
+
+	
+
+</project>
