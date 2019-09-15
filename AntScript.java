@@ -13,7 +13,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 
 public class AntScript {
-
+       static  Regex regex = new Regex();
 	public static void main(String[] args) throws FileNotFoundException{
 //creating file instance to refer  text file
 try{
@@ -23,7 +23,7 @@ File file = new File (scnr.nextLine());
 scnr = new Scanner(file);
 while (scnr.hasNextLine()){
 String line = scnr.nextLine();
-System.out.println(line);
+regex.isValidIP(line);
 }
 scnr.close();
 }
