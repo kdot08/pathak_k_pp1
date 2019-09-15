@@ -24,6 +24,7 @@ scnr = new Scanner(file);
 while (scnr.hasNextLine()){
 String line = scnr.nextLine();
 regex.isValidIP(line);
+regex.isValidUser(line);
 }
 scnr.close();
 }
