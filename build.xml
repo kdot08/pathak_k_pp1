@@ -11,7 +11,8 @@
 		<echo>Generating the .java files</echo>
 		
 		<java classname="AntScript">	
-			
+		<arg value="regex.txt" />
+			<arg value="3" />		
 		</java>
 
 	</target>
