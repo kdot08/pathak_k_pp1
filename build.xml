@@ -22,6 +22,14 @@
 		<javac includeantruntime="false" srcdir="." destdir="." />
 	</target>
 
-	
+<target name = "clean">
+<echo> Cleaning Java Src Files </echo>
+<delete>
+	<fileset dir = ".">
+<inlude name  = "AntScript.class"/>
+	<include name  = "Regex.class"/>
+	</fileset>
+		</delete>
+	</target>	
 
 </project>
