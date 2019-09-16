@@ -12,10 +12,12 @@ import java.util.regex.Pattern;
 import java.util.HashMap;
 import java.util.Map; 
 public class Regex {
-	static HashMap<String, Integer> ip = new HashMap<String, Integer>();
+//key values
+static HashMap<String, Integer> ip = new HashMap<String, Integer>();
 	static HashMap<String, Integer> users = new HashMap<String, Integer>();
 static  void  isValidIP(String ipAddr){
-  
+  //regex expression for pattern matching
+// ip address
         Pattern ptn = Pattern.compile("(((\\d{3})|(\\d{2}))[.]){3}((\\d{3})|(\\d{2}))");
   
  Matcher mtch = ptn.matcher(ipAddr);
@@ -29,6 +31,7 @@ static  void  isValidIP(String ipAddr){
 			}
 }
 static void isValidUser(String ipUser){
+// implementing regex expression for users and created similar method as above for pattern matching
 Pattern ptn1 = Pattern.compile("user (([a-z]+|[A-Z]+|[0-9]+)+)");
 Matcher mtch1 = ptn1.matcher(ipUser);
  if(mtch1.find()) {
@@ -42,10 +45,11 @@ Matcher mtch1 = ptn1.matcher(ipUser);
 				}
 			}
 }
+//takes paramter map and returns its size
 static int mapSize(HashMap<String, Integer> map) {
 		return map.size();
 	}
-
+//takes parameters map and iterates throguh it 
 	static void traverseMap(HashMap<String, Integer> map) {
 		for (String i : map.keySet() ) {
 			System.out.println(i + " :" + map.get(i)); 

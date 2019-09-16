@@ -13,9 +13,14 @@ import java.io.File;
 import java.io.FileNotFoundException;
 
 public class AntScript {
+//called second class
        static  Regex regex = new Regex();
 	static int counter = 0;
 	public static void main(String[] args){readFile(args[0]);
+
+//implemting switch cases
+//print flags
+
 String userFlag = args[1];
 		int flag = Integer.parseInt(userFlag);
 		switch(flag) {
@@ -43,8 +48,9 @@ String userFlag = args[1];
 		}
 	System.out.println("finished switch");
 }
+//argument to prcoess the filenmae
 static void readFile(String filename){
-
+//try and catch error wraps the file name process
 try{
 	System.out.println("Enter the file name  you want to process :");
 	Scanner scnr= new Scanner(System.in);
@@ -56,8 +62,7 @@ try{
 	regex.isValidUser(line);
 	counter++;
 		}
-		scnr.close();
-		
+		scnr.close();		
 		}
 catch (FileNotFoundException e) {
         e.printStackTrace();
