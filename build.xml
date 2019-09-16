@@ -12,7 +12,7 @@
 		
 		<java classname="AntScript">	
 		<arg value="regex.txt" />
-			<arg value="3" />		
+			<arg value="1" />		
 		</java>
 
 	</target>
